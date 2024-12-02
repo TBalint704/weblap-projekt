@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat</title>
+    <link rel="stylesheet" href="kapcsolat.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">BBay</div>
+            <ul class="nav-links">
+                <li><a href="bbayhtml.html">Kezdőlap</a></li>
+                <li><a href="products.html">Termékek</a></li>
+                <li><a href="categories.html">Kategóriák</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Kapcsolatfelvétel</h2>
+            <p>Ha kérdése van, vagy kapcsolatba szeretne lépni velünk, kérjük, töltse ki az alábbi űrlapot, vagy használja az alábbi elérhetőségeket.</p>
+
+            <div class="contact-info">
+                <h3>Elérhetőségeink</h3>
+                <p><strong>Cím:</strong> 2400 Dunaújváros, Hajnal utca 10.</p>
+                <p><strong>E-mail:</strong> <a href="mailto:support@bbay.hu">support@bbay.hu</a></p>
+                <p><strong>Telefon:</strong> +36 5 183 2442</p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Kapcsolatfelvételi Űrlap</h3>
+                <form action="submit-contact.php" method="post">
+                    <label for="name">Név:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Üzenet:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Elküldés</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BBay Minden jog fenntartva.</p>
+        <p>
+            <a href="adatvedelem.html">Adatvédelmi szabályzat</a> |
+            <a href="ászf.html">Általános szerződési feltételek</a>
+        </p>
+    </footer>
+</body>
+</html>
